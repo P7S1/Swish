@@ -3,27 +3,190 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F279037078ECA5A1D9493C8 /* Pods_Swish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F1149A63181E68860144E3 /* Pods_Swish.framework */; };
+		DF0736D4245FA75D00735B87 /* ViewInboxItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0736D3245FA75D00735B87 /* ViewInboxItemViewController.swift */; };
+		DF11A110246C826E005A388F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF11A10F246C826E005A388F /* WebViewController.swift */; };
+		DF126787245D0851003591AB /* GetGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF126786245D0851003591AB /* GetGameCell.xib */; };
+		DF12678B245D2597003591AB /* GetGameCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12678A245D2597003591AB /* GetGameCellModel.swift */; };
+		DF12BCD624AE2C890002F97E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12BCD524AE2C890002F97E /* GradientView.swift */; };
 		DF3081592454C1DA005FFC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3081582454C1DA005FFC7C /* AppDelegate.swift */; };
 		DF30815B2454C1DA005FFC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30815A2454C1DA005FFC7C /* SceneDelegate.swift */; };
-		DF30815D2454C1DA005FFC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30815C2454C1DA005FFC7C /* ViewController.swift */; };
-		DF3081602454C1DA005FFC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF30815E2454C1DA005FFC7C /* Main.storyboard */; };
+		DF30815D2454C1DA005FFC7C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30815C2454C1DA005FFC7C /* HomeViewController.swift */; };
+		DF3081602454C1DA005FFC7C /* Inbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF30815E2454C1DA005FFC7C /* Inbox.storyboard */; };
 		DF3081622454C1DF005FFC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3081612454C1DF005FFC7C /* Assets.xcassets */; };
 		DF3081652454C1DF005FFC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3081632454C1DF005FFC7C /* LaunchScreen.storyboard */; };
+		DF30816D2454C3B3005FFC7C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30816C2454C3B3005FFC7C /* TabBarController.swift */; };
+		DF30816F2454C7A4005FFC7C /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30816E2454C7A4005FFC7C /* InboxViewController.swift */; };
+		DF3081712454C864005FFC7C /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3081702454C864005FFC7C /* Play.storyboard */; };
+		DF3081732454C885005FFC7C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3081722454C885005FFC7C /* PlayViewController.swift */; };
+		DF32B94F24580B29009EB035 /* CLLocationCoordinate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32B94B24580B26009EB035 /* CLLocationCoordinate+Extensions.swift */; };
+		DF32B95024580B29009EB035 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32B94C24580B27009EB035 /* GoogleDataProvider.swift */; };
+		DF32B95124580B29009EB035 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32B94D24580B28009EB035 /* GooglePlace.swift */; };
+		DF32B95224580B29009EB035 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF32B94E24580B29009EB035 /* Metadata.swift */; };
+		DF45BF8924644AA8004608C4 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45BF8824644AA8004608C4 /* FriendsViewController.swift */; };
+		DF45BF8B24644C49004608C4 /* CarbonSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45BF8A24644C49004608C4 /* CarbonSwipe.swift */; };
+		DF45BF8E24644FB1004608C4 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF45BF8D24644FB1004608C4 /* Friends.storyboard */; };
+		DF45BF9024644FD9004608C4 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45BF8F24644FD9004608C4 /* AddFriendsViewController.swift */; };
+		DF45BF9224644FFC004608C4 /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45BF9124644FFC004608C4 /* MyFriendsViewController.swift */; };
+		DF52B85024623821004B6689 /* SnapchatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52B84F24623821004B6689 /* SnapchatHelper.swift */; };
+		DF70699524631BE0004468CE /* MainDelegatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70699424631BE0004468CE /* MainDelegatesManager.swift */; };
+		DF70699724631DBE004468CE /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70699624631DBE004468CE /* URL.swift */; };
+		DF70699924635227004468CE /* InviteFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70699824635227004468CE /* InviteFriendsTableViewCell.swift */; };
+		DF70699B24635327004468CE /* InviteFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70699A24635327004468CE /* InviteFriendViewController.swift */; };
+		DF70699D246353B8004468CE /* FetchedContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF70699C246353B8004468CE /* FetchedContact.swift */; };
+		DF710B7724610D39006F2686 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF710B7624610D39006F2686 /* SettingsTableViewController.swift */; };
+		DF71DBCD2454CDC2003F268D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF71DBCC2454CDC2003F268D /* Main.storyboard */; };
+		DF71DBCF2454F2A3003F268D /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71DBCE2454F2A3003F268D /* CALayer.swift */; };
+		DF71DBD12454FAF6003F268D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF71DBD02454FAF6003F268D /* LoginViewController.swift */; };
+		DF752096245CEAAB0018AB9F /* GenderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF752095245CEAAB0018AB9F /* GenderType.swift */; };
+		DF752099245CED540018AB9F /* GradeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF752098245CED540018AB9F /* GradeType.swift */; };
+		DF75209B245CF12A0018AB9F /* SchoolLevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF75209A245CF12A0018AB9F /* SchoolLevelType.swift */; };
+		DF89ECAD2457103A00D7FCBA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECAC2457103A00D7FCBA /* User.swift */; };
+		DF89ECB02457363C00D7FCBA /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECAF2457363C00D7FCBA /* GenderViewController.swift */; };
+		DF89ECB2245737CB00D7FCBA /* GradeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECB1245737CB00D7FCBA /* GradeTableViewController.swift */; };
+		DF89ECB424573B5600D7FCBA /* JoinSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECB324573B5600D7FCBA /* JoinSchoolViewController.swift */; };
+		DF89ECB82457642000D7FCBA /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECB72457642000D7FCBA /* BasicButton.swift */; };
+		DF89ECBB2457791100D7FCBA /* BasicTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECBA2457791100D7FCBA /* BasicTextField.swift */; };
+		DF89ECBD24577B6700D7FCBA /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECBC24577B6700D7FCBA /* UITextField.swift */; };
+		DF89ECBF24577D5E00D7FCBA /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECBE24577D5E00D7FCBA /* PhoneNumberViewController.swift */; };
+		DF89ECC12457AE2500D7FCBA /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECC02457AE2500D7FCBA /* CodeViewController.swift */; };
+		DF89ECC32457B50100D7FCBA /* BarButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECC22457B50100D7FCBA /* BarButtonHelper.swift */; };
+		DF89ECC52457B79C00D7FCBA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF89ECC42457B79C00D7FCBA /* String.swift */; };
+		DF8A15E92468537B0059D825 /* NotificationsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8A15E82468537B0059D825 /* NotificationsHelper.swift */; };
+		DF8D30D42467A86B00C4AB7F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D30D32467A86B00C4AB7F /* EmptyView.swift */; };
+		DF8F1B782464633F00C43E96 /* MyFriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F1B772464633F00C43E96 /* MyFriendCollectionViewCell.swift */; };
+		DF8F1B7A2464EECD00C43E96 /* FriendshipHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F1B792464EECD00C43E96 /* FriendshipHelper.swift */; };
+		DF8F1B7C2464EFD900C43E96 /* Friendship.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F1B7B2464EFD900C43E96 /* Friendship.swift */; };
+		DF8F1B7E2466175100C43E96 /* RecommendedUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8F1B7D2466175000C43E96 /* RecommendedUserResponse.swift */; };
+		DF92AE80245BA09B008783BB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92AE7F245BA09B008783BB /* Question.swift */; };
+		DF92AE83245C5E95008783BB /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92AE81245C5E94008783BB /* Decodable.swift */; };
+		DF92AE84245C5E95008783BB /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92AE82245C5E95008783BB /* Encodable.swift */; };
+		DF92AE88245C7513008783BB /* PollHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92AE87245C7513008783BB /* PollHelper.swift */; };
+		DF966C1A245FFAC70091D0FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF966C19245FFAC70091D0FC /* ProfileViewController.swift */; };
+		DF98C92E2458AA1100CDB965 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98C92D2458AA1100CDB965 /* AppHelper.swift */; };
+		DF99BAA5245943DE00877B31 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF99BAA4245943DD00877B31 /* UIViewController.swift */; };
+		DF9A589624635EF400F80B7D /* FindFriendsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A589524635EF400F80B7D /* FindFriendsHelper.swift */; };
+		DF9A589824637E8300F80B7D /* FirebaserContactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9A589724637E8300F80B7D /* FirebaserContactResponse.swift */; };
+		DFA4BDC52459CE5D00DCFC99 /* SetupCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA4BDC42459CE5D00DCFC99 /* SetupCompleteViewController.swift */; };
+		DFAB8E59246CC3C500A3A3A8 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB8E58246CC3C500A3A3A8 /* GifViewController.swift */; };
+		DFAB8E5B246CC3E600A3A3A8 /* GiphyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB8E5A246CC3E600A3A3A8 /* GiphyHelper.swift */; };
+		DFAB8E5D246CCC0400A3A3A8 /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB8E5C246CCC0400A3A3A8 /* SubmitQuestionViewController.swift */; };
+		DFAB8E5F246CD83800A3A3A8 /* SubmittedQuesiton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAB8E5E246CD83800A3A3A8 /* SubmittedQuesiton.swift */; };
+		DFADDA142457E36100327340 /* NearbySchoolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADDA132457E36100327340 /* NearbySchoolsViewController.swift */; };
+		DFADDA162457E3BC00327340 /* SchoolLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFADDA152457E3BC00327340 /* SchoolLocationTableViewCell.swift */; };
+		DFB65D30245B250500188618 /* GamePollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB65D2F245B250500188618 /* GamePollCell.xib */; };
+		DFB65D32245B270600188618 /* GamePollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB65D31245B270600188618 /* GamePollTableViewCell.swift */; };
+		DFB65D38245B755300188618 /* PollQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB65D37245B755300188618 /* PollQuestion.swift */; };
+		DFB65D3A245B765F00188618 /* CompletedPollQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB65D39245B765F00188618 /* CompletedPollQuestion.swift */; };
+		DFBA0AD3245E2D4F0098023C /* InboxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA0AD2245E2D4F0098023C /* InboxItem.swift */; };
+		DFBA0AD5245F06DA0098023C /* InboxItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA0AD4245F06DA0098023C /* InboxItemTableViewCell.swift */; };
+		DFBA0AD7245F3A0F0098023C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA0AD6245F3A0F0098023C /* Date.swift */; };
+		DFBBAAFB24BC37210020C775 /* Odin Rounded - Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DFBBAAF924BC364C0020C775 /* Odin Rounded - Bold.otf */; };
+		DFBBAAFC24BC37250020C775 /* Odin Rounded - Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DFBBAAFA24BC365A0020C775 /* Odin Rounded - Regular.otf */; };
+		DFC30B06245CC1000013A0D1 /* PollQuestionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC30B05245CC1000013A0D1 /* PollQuestionResponse.swift */; };
+		DFC686B824562A800089CD1A /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC686B724562A800089CD1A /* NameViewController.swift */; };
+		DFCEAEF9245A58F100C7185A /* GameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFCEAEF8245A58F100C7185A /* GameCell.xib */; };
+		DFCEAEFB245A594000C7185A /* GameCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCEAEFA245A594000C7185A /* GameCardCell.swift */; };
+		DFE244C32455017D003F245E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFE244C22455017D003F245E /* GoogleService-Info.plist */; };
+		DFF6E7742457B86C00BA6F3C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF6E7732457B86C00BA6F3C /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7363AD500E36D685DFE242BB /* Pods-Swish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.debug.xcconfig"; path = "Target Support Files/Pods-Swish/Pods-Swish.debug.xcconfig"; sourceTree = "<group>"; };
+		84E953E2D5DB243D1BF98251 /* Pods-Swish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swish.release.xcconfig"; path = "Target Support Files/Pods-Swish/Pods-Swish.release.xcconfig"; sourceTree = "<group>"; };
+		96F1149A63181E68860144E3 /* Pods_Swish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0736D3245FA75D00735B87 /* ViewInboxItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInboxItemViewController.swift; sourceTree = "<group>"; };
+		DF11A10F246C826E005A388F /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DF126786245D0851003591AB /* GetGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetGameCell.xib; sourceTree = "<group>"; };
+		DF12678A245D2597003591AB /* GetGameCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGameCellModel.swift; sourceTree = "<group>"; };
+		DF12BCD524AE2C890002F97E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DF3081552454C1DA005FFC7C /* Swish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3081582454C1DA005FFC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF30815A2454C1DA005FFC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF30815C2454C1DA005FFC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF30815F2454C1DA005FFC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF30815C2454C1DA005FFC7C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DF30815F2454C1DA005FFC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Inbox.storyboard; sourceTree = "<group>"; };
 		DF3081612454C1DF005FFC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3081642454C1DF005FFC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF3081662454C1DF005FFC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF30816C2454C3B3005FFC7C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DF30816E2454C7A4005FFC7C /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		DF3081702454C864005FFC7C /* Play.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
+		DF3081722454C885005FFC7C /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		DF32B94B24580B26009EB035 /* CLLocationCoordinate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate+Extensions.swift"; sourceTree = "<group>"; };
+		DF32B94C24580B27009EB035 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		DF32B94D24580B28009EB035 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		DF32B94E24580B29009EB035 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		DF45BF8824644AA8004608C4 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		DF45BF8A24644C49004608C4 /* CarbonSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonSwipe.swift; sourceTree = "<group>"; };
+		DF45BF8D24644FB1004608C4 /* Friends.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		DF45BF8F24644FD9004608C4 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		DF45BF9124644FFC004608C4 /* MyFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
+		DF52B84F24623821004B6689 /* SnapchatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatHelper.swift; sourceTree = "<group>"; };
+		DF70699424631BE0004468CE /* MainDelegatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegatesManager.swift; sourceTree = "<group>"; };
+		DF70699624631DBE004468CE /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		DF70699824635227004468CE /* InviteFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		DF70699A24635327004468CE /* InviteFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendViewController.swift; sourceTree = "<group>"; };
+		DF70699C246353B8004468CE /* FetchedContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedContact.swift; sourceTree = "<group>"; };
+		DF710B7624610D39006F2686 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		DF71DBCC2454CDC2003F268D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DF71DBCE2454F2A3003F268D /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		DF71DBD02454FAF6003F268D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF752095245CEAAB0018AB9F /* GenderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderType.swift; sourceTree = "<group>"; };
+		DF752098245CED540018AB9F /* GradeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeType.swift; sourceTree = "<group>"; };
+		DF75209A245CF12A0018AB9F /* SchoolLevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolLevelType.swift; sourceTree = "<group>"; };
+		DF89ECAC2457103A00D7FCBA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF89ECAF2457363C00D7FCBA /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		DF89ECB1245737CB00D7FCBA /* GradeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewController.swift; sourceTree = "<group>"; };
+		DF89ECB324573B5600D7FCBA /* JoinSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSchoolViewController.swift; sourceTree = "<group>"; };
+		DF89ECB72457642000D7FCBA /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		DF89ECB92457731B00D7FCBA /* Swish.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swish.entitlements; sourceTree = "<group>"; };
+		DF89ECBA2457791100D7FCBA /* BasicTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTextField.swift; sourceTree = "<group>"; };
+		DF89ECBC24577B6700D7FCBA /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		DF89ECBE24577D5E00D7FCBA /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		DF89ECC02457AE2500D7FCBA /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		DF89ECC22457B50100D7FCBA /* BarButtonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonHelper.swift; sourceTree = "<group>"; };
+		DF89ECC42457B79C00D7FCBA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DF8A15E82468537B0059D825 /* NotificationsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsHelper.swift; sourceTree = "<group>"; };
+		DF8D30D32467A86B00C4AB7F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		DF8F1B772464633F00C43E96 /* MyFriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF8F1B792464EECD00C43E96 /* FriendshipHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipHelper.swift; sourceTree = "<group>"; };
+		DF8F1B7B2464EFD900C43E96 /* Friendship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friendship.swift; sourceTree = "<group>"; };
+		DF8F1B7D2466175000C43E96 /* RecommendedUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedUserResponse.swift; sourceTree = "<group>"; };
+		DF92AE7F245BA09B008783BB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DF92AE81245C5E94008783BB /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		DF92AE82245C5E95008783BB /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		DF92AE87245C7513008783BB /* PollHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollHelper.swift; sourceTree = "<group>"; };
+		DF966C19245FFAC70091D0FC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DF98C92D2458AA1100CDB965 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		DF99BAA4245943DD00877B31 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		DF9A589524635EF400F80B7D /* FindFriendsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFriendsHelper.swift; sourceTree = "<group>"; };
+		DF9A589724637E8300F80B7D /* FirebaserContactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaserContactResponse.swift; sourceTree = "<group>"; };
+		DFA4BDC42459CE5D00DCFC99 /* SetupCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCompleteViewController.swift; sourceTree = "<group>"; };
+		DFAB8E58246CC3C500A3A3A8 /* GifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		DFAB8E5A246CC3E600A3A3A8 /* GiphyHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiphyHelper.swift; sourceTree = "<group>"; };
+		DFAB8E5C246CCC0400A3A3A8 /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
+		DFAB8E5E246CD83800A3A3A8 /* SubmittedQuesiton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmittedQuesiton.swift; sourceTree = "<group>"; };
+		DFADDA132457E36100327340 /* NearbySchoolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbySchoolsViewController.swift; sourceTree = "<group>"; };
+		DFADDA152457E3BC00327340 /* SchoolLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolLocationTableViewCell.swift; sourceTree = "<group>"; };
+		DFB65D2F245B250500188618 /* GamePollCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamePollCell.xib; sourceTree = "<group>"; };
+		DFB65D31245B270600188618 /* GamePollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePollTableViewCell.swift; sourceTree = "<group>"; };
+		DFB65D37245B755300188618 /* PollQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollQuestion.swift; sourceTree = "<group>"; };
+		DFB65D39245B765F00188618 /* CompletedPollQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedPollQuestion.swift; sourceTree = "<group>"; };
+		DFBA0AD2245E2D4F0098023C /* InboxItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxItem.swift; sourceTree = "<group>"; };
+		DFBA0AD4245F06DA0098023C /* InboxItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxItemTableViewCell.swift; sourceTree = "<group>"; };
+		DFBA0AD6245F3A0F0098023C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		DFBBAAF924BC364C0020C775 /* Odin Rounded - Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Odin Rounded - Bold.otf"; sourceTree = "<group>"; };
+		DFBBAAFA24BC365A0020C775 /* Odin Rounded - Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Odin Rounded - Regular.otf"; sourceTree = "<group>"; };
+		DFC30B05245CC1000013A0D1 /* PollQuestionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollQuestionResponse.swift; sourceTree = "<group>"; };
+		DFC686B724562A800089CD1A /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		DFCEAEF8245A58F100C7185A /* GameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCell.xib; sourceTree = "<group>"; };
+		DFCEAEFA245A594000C7185A /* GameCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCardCell.swift; sourceTree = "<group>"; };
+		DFE244C22455017D003F245E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DFF6E7732457B86C00BA6F3C /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +194,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F279037078ECA5A1D9493C8 /* Pods_Swish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98D1A83130274818EABD4320 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96F1149A63181E68860144E3 /* Pods_Swish.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C11A65531975877549B18DAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7363AD500E36D685DFE242BB /* Pods-Swish.debug.xcconfig */,
+				84E953E2D5DB243D1BF98251 /* Pods-Swish.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DF30814C2454C1DA005FFC7C = {
 			isa = PBXGroup;
 			children = (
 				DF3081572454C1DA005FFC7C /* Swish */,
 				DF3081562454C1DA005FFC7C /* Products */,
+				C11A65531975877549B18DAA /* Pods */,
+				98D1A83130274818EABD4320 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +239,223 @@
 		DF3081572454C1DA005FFC7C /* Swish */ = {
 			isa = PBXGroup;
 			children = (
-				DF3081582454C1DA005FFC7C /* AppDelegate.swift */,
-				DF30815A2454C1DA005FFC7C /* SceneDelegate.swift */,
-				DF30815C2454C1DA005FFC7C /* ViewController.swift */,
-				DF30815E2454C1DA005FFC7C /* Main.storyboard */,
-				DF3081612454C1DF005FFC7C /* Assets.xcassets */,
-				DF3081632454C1DF005FFC7C /* LaunchScreen.storyboard */,
+				DF89ECB92457731B00D7FCBA /* Swish.entitlements */,
 				DF3081662454C1DF005FFC7C /* Info.plist */,
+				DFE244C22455017D003F245E /* GoogleService-Info.plist */,
+				DFBBAAF824BC35580020C775 /* Fonts */,
+				DFCEAEF4245A50B400C7185A /* Model */,
+				DFCEAEF7245A513000C7185A /* ViewControllers */,
+				DFCEAEEE245A4EDA00C7185A /* Core */,
 			);
 			path = Swish;
+			sourceTree = "<group>";
+		};
+		DF32B94A24580B0F009EB035 /* Google API */ = {
+			isa = PBXGroup;
+			children = (
+				DF32B94B24580B26009EB035 /* CLLocationCoordinate+Extensions.swift */,
+				DF32B94C24580B27009EB035 /* GoogleDataProvider.swift */,
+				DF32B94D24580B28009EB035 /* GooglePlace.swift */,
+				DF32B94E24580B29009EB035 /* Metadata.swift */,
+			);
+			path = "Google API";
+			sourceTree = "<group>";
+		};
+		DF45BF8C24644F95004608C4 /* Friends+ */ = {
+			isa = PBXGroup;
+			children = (
+				DF45BF8D24644FB1004608C4 /* Friends.storyboard */,
+				DF45BF8824644AA8004608C4 /* FriendsViewController.swift */,
+				DF45BF8F24644FD9004608C4 /* AddFriendsViewController.swift */,
+				DF45BF9124644FFC004608C4 /* MyFriendsViewController.swift */,
+			);
+			path = "Friends+";
+			sourceTree = "<group>";
+		};
+		DF752097245CEAB50018AB9F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DF752095245CEAAB0018AB9F /* GenderType.swift */,
+				DF75209A245CF12A0018AB9F /* SchoolLevelType.swift */,
+				DF752098245CED540018AB9F /* GradeType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DF89ECAE2457350700D7FCBA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DF71DBCC2454CDC2003F268D /* Main.storyboard */,
+				DF71DBD02454FAF6003F268D /* LoginViewController.swift */,
+				DF89ECBE24577D5E00D7FCBA /* PhoneNumberViewController.swift */,
+				DF89ECC02457AE2500D7FCBA /* CodeViewController.swift */,
+				DFC686B724562A800089CD1A /* NameViewController.swift */,
+				DF89ECAF2457363C00D7FCBA /* GenderViewController.swift */,
+				DF89ECB1245737CB00D7FCBA /* GradeTableViewController.swift */,
+				DF89ECB324573B5600D7FCBA /* JoinSchoolViewController.swift */,
+				DFADDA132457E36100327340 /* NearbySchoolsViewController.swift */,
+				DFA4BDC42459CE5D00DCFC99 /* SetupCompleteViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		DFAB8E60246CDEFF00A3A3A8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DF710B7624610D39006F2686 /* SettingsTableViewController.swift */,
+				DFAB8E58246CC3C500A3A3A8 /* GifViewController.swift */,
+				DF11A10F246C826E005A388F /* WebViewController.swift */,
+				DFAB8E5C246CCC0400A3A3A8 /* SubmitQuestionViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DFBBAAF824BC35580020C775 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DFBBAAFA24BC365A0020C775 /* Odin Rounded - Regular.otf */,
+				DFBBAAF924BC364C0020C775 /* Odin Rounded - Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DFCEAEEE245A4EDA00C7185A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DF3081582454C1DA005FFC7C /* AppDelegate.swift */,
+				DF30815A2454C1DA005FFC7C /* SceneDelegate.swift */,
+				DF3081632454C1DF005FFC7C /* LaunchScreen.storyboard */,
+				DF3081612454C1DF005FFC7C /* Assets.xcassets */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DFCEAEEF245A4F1300C7185A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF99BAA4245943DD00877B31 /* UIViewController.swift */,
+				DFF6E7732457B86C00BA6F3C /* UIView.swift */,
+				DF89ECC42457B79C00D7FCBA /* String.swift */,
+				DF89ECBC24577B6700D7FCBA /* UITextField.swift */,
+				DF71DBCE2454F2A3003F268D /* CALayer.swift */,
+				DF92AE81245C5E94008783BB /* Decodable.swift */,
+				DF92AE82245C5E95008783BB /* Encodable.swift */,
+				DFBA0AD6245F3A0F0098023C /* Date.swift */,
+				DF70699624631DBE004468CE /* URL.swift */,
+				DF8D30D32467A86B00C4AB7F /* EmptyView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFCEAEF0245A4F7400C7185A /* UIKit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				DF30815C2454C1DA005FFC7C /* HomeViewController.swift */,
+				DF89ECB72457642000D7FCBA /* BasicButton.swift */,
+				DF89ECBA2457791100D7FCBA /* BasicTextField.swift */,
+				DF30816C2454C3B3005FFC7C /* TabBarController.swift */,
+				DF45BF8A24644C49004608C4 /* CarbonSwipe.swift */,
+				DF12BCD524AE2C890002F97E /* GradientView.swift */,
+			);
+			path = "UIKit Subclasses";
+			sourceTree = "<group>";
+		};
+		DFCEAEF1245A4FA300C7185A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF32B94A24580B0F009EB035 /* Google API */,
+				DF89ECC22457B50100D7FCBA /* BarButtonHelper.swift */,
+				DF98C92D2458AA1100CDB965 /* AppHelper.swift */,
+				DF92AE87245C7513008783BB /* PollHelper.swift */,
+				DF52B84F24623821004B6689 /* SnapchatHelper.swift */,
+				DF70699424631BE0004468CE /* MainDelegatesManager.swift */,
+				DF9A589524635EF400F80B7D /* FindFriendsHelper.swift */,
+				DF8F1B792464EECD00C43E96 /* FriendshipHelper.swift */,
+				DF8A15E82468537B0059D825 /* NotificationsHelper.swift */,
+				DFAB8E5A246CC3E600A3A3A8 /* GiphyHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DFCEAEF2245A4FE200C7185A /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				DFAB8E60246CDEFF00A3A3A8 /* Settings */,
+				DF45BF8C24644F95004608C4 /* Friends+ */,
+				DF30815E2454C1DA005FFC7C /* Inbox.storyboard */,
+				DF30816E2454C7A4005FFC7C /* InboxViewController.swift */,
+				DF0736D3245FA75D00735B87 /* ViewInboxItemViewController.swift */,
+				DF966C19245FFAC70091D0FC /* ProfileViewController.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		DFCEAEF3245A500A00C7185A /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				DF3081722454C885005FFC7C /* PlayViewController.swift */,
+				DF70699A24635327004468CE /* InviteFriendViewController.swift */,
+				DFCEAEF8245A58F100C7185A /* GameCell.xib */,
+				DFB65D2F245B250500188618 /* GamePollCell.xib */,
+				DF126786245D0851003591AB /* GetGameCell.xib */,
+				DF3081702454C864005FFC7C /* Play.storyboard */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		DFCEAEF4245A50B400C7185A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEAEF5245A50E200C7185A /* Database Models */,
+				DF752097245CEAB50018AB9F /* Enums */,
+				DFCEAEF0245A4F7400C7185A /* UIKit Subclasses */,
+				DFCEAEEF245A4F1300C7185A /* Extensions */,
+				DFCEAEF1245A4FA300C7185A /* Helpers */,
+				DFCEAEF6245A50EA00C7185A /* Reusable Cell Models */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFCEAEF5245A50E200C7185A /* Database Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF89ECAC2457103A00D7FCBA /* User.swift */,
+				DF92AE7F245BA09B008783BB /* Question.swift */,
+				DFB65D37245B755300188618 /* PollQuestion.swift */,
+				DFB65D39245B765F00188618 /* CompletedPollQuestion.swift */,
+				DFC30B05245CC1000013A0D1 /* PollQuestionResponse.swift */,
+				DFBA0AD2245E2D4F0098023C /* InboxItem.swift */,
+				DF70699C246353B8004468CE /* FetchedContact.swift */,
+				DF9A589724637E8300F80B7D /* FirebaserContactResponse.swift */,
+				DF8F1B7B2464EFD900C43E96 /* Friendship.swift */,
+				DF8F1B7D2466175000C43E96 /* RecommendedUserResponse.swift */,
+				DFAB8E5E246CD83800A3A3A8 /* SubmittedQuesiton.swift */,
+			);
+			path = "Database Models";
+			sourceTree = "<group>";
+		};
+		DFCEAEF6245A50EA00C7185A /* Reusable Cell Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFADDA152457E3BC00327340 /* SchoolLocationTableViewCell.swift */,
+				DFCEAEFA245A594000C7185A /* GameCardCell.swift */,
+				DFB65D31245B270600188618 /* GamePollTableViewCell.swift */,
+				DF12678A245D2597003591AB /* GetGameCellModel.swift */,
+				DFBA0AD4245F06DA0098023C /* InboxItemTableViewCell.swift */,
+				DF70699824635227004468CE /* InviteFriendsTableViewCell.swift */,
+				DF8F1B772464633F00C43E96 /* MyFriendCollectionViewCell.swift */,
+			);
+			path = "Reusable Cell Models";
+			sourceTree = "<group>";
+		};
+		DFCEAEF7245A513000C7185A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF89ECAE2457350700D7FCBA /* Login */,
+				DFCEAEF2245A4FE200C7185A /* Inbox */,
+				DFCEAEF3245A500A00C7185A /* Play */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +465,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF3081692454C1DF005FFC7C /* Build configuration list for PBXNativeTarget "Swish" */;
 			buildPhases = (
+				3D6C8E519891DA36AA4CA04C /* [CP] Check Pods Manifest.lock */,
 				DF3081512454C1DA005FFC7C /* Sources */,
 				DF3081522454C1DA005FFC7C /* Frameworks */,
 				DF3081532454C1DA005FFC7C /* Resources */,
+				3B5DE2360F896CF2BB4CDC34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,34 +518,155 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFBBAAFB24BC37210020C775 /* Odin Rounded - Bold.otf in Resources */,
+				DFCEAEF9245A58F100C7185A /* GameCell.xib in Resources */,
 				DF3081652454C1DF005FFC7C /* LaunchScreen.storyboard in Resources */,
+				DFB65D30245B250500188618 /* GamePollCell.xib in Resources */,
+				DF71DBCD2454CDC2003F268D /* Main.storyboard in Resources */,
+				DF3081712454C864005FFC7C /* Play.storyboard in Resources */,
 				DF3081622454C1DF005FFC7C /* Assets.xcassets in Resources */,
-				DF3081602454C1DA005FFC7C /* Main.storyboard in Resources */,
+				DFBBAAFC24BC37250020C775 /* Odin Rounded - Regular.otf in Resources */,
+				DF45BF8E24644FB1004608C4 /* Friends.storyboard in Resources */,
+				DFE244C32455017D003F245E /* GoogleService-Info.plist in Resources */,
+				DF3081602454C1DA005FFC7C /* Inbox.storyboard in Resources */,
+				DF126787245D0851003591AB /* GetGameCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B5DE2360F896CF2BB4CDC34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swish/Pods-Swish-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swish/Pods-Swish-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swish/Pods-Swish-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6C8E519891DA36AA4CA04C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF3081512454C1DA005FFC7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF30815D2454C1DA005FFC7C /* ViewController.swift in Sources */,
+				DFCEAEFB245A594000C7185A /* GameCardCell.swift in Sources */,
+				DFAB8E5B246CC3E600A3A3A8 /* GiphyHelper.swift in Sources */,
+				DF89ECB82457642000D7FCBA /* BasicButton.swift in Sources */,
+				DF8F1B782464633F00C43E96 /* MyFriendCollectionViewCell.swift in Sources */,
+				DF92AE88245C7513008783BB /* PollHelper.swift in Sources */,
+				DFC30B06245CC1000013A0D1 /* PollQuestionResponse.swift in Sources */,
+				DF30816F2454C7A4005FFC7C /* InboxViewController.swift in Sources */,
+				DFB65D38245B755300188618 /* PollQuestion.swift in Sources */,
+				DF89ECC52457B79C00D7FCBA /* String.swift in Sources */,
+				DF32B94F24580B29009EB035 /* CLLocationCoordinate+Extensions.swift in Sources */,
+				DF12678B245D2597003591AB /* GetGameCellModel.swift in Sources */,
+				DF30815D2454C1DA005FFC7C /* HomeViewController.swift in Sources */,
+				DF89ECBF24577D5E00D7FCBA /* PhoneNumberViewController.swift in Sources */,
+				DF70699D246353B8004468CE /* FetchedContact.swift in Sources */,
+				DFADDA142457E36100327340 /* NearbySchoolsViewController.swift in Sources */,
+				DF70699524631BE0004468CE /* MainDelegatesManager.swift in Sources */,
+				DF89ECBD24577B6700D7FCBA /* UITextField.swift in Sources */,
+				DF70699B24635327004468CE /* InviteFriendViewController.swift in Sources */,
+				DFBA0AD5245F06DA0098023C /* InboxItemTableViewCell.swift in Sources */,
+				DF32B95124580B29009EB035 /* GooglePlace.swift in Sources */,
+				DF30816D2454C3B3005FFC7C /* TabBarController.swift in Sources */,
+				DF8F1B7A2464EECD00C43E96 /* FriendshipHelper.swift in Sources */,
+				DFBA0AD7245F3A0F0098023C /* Date.swift in Sources */,
+				DF8F1B7E2466175100C43E96 /* RecommendedUserResponse.swift in Sources */,
+				DF89ECBB2457791100D7FCBA /* BasicTextField.swift in Sources */,
+				DFB65D3A245B765F00188618 /* CompletedPollQuestion.swift in Sources */,
+				DF9A589624635EF400F80B7D /* FindFriendsHelper.swift in Sources */,
+				DF98C92E2458AA1100CDB965 /* AppHelper.swift in Sources */,
+				DFA4BDC52459CE5D00DCFC99 /* SetupCompleteViewController.swift in Sources */,
+				DF966C1A245FFAC70091D0FC /* ProfileViewController.swift in Sources */,
 				DF3081592454C1DA005FFC7C /* AppDelegate.swift in Sources */,
+				DF52B85024623821004B6689 /* SnapchatHelper.swift in Sources */,
+				DF752096245CEAAB0018AB9F /* GenderType.swift in Sources */,
+				DF99BAA5245943DE00877B31 /* UIViewController.swift in Sources */,
+				DF71DBD12454FAF6003F268D /* LoginViewController.swift in Sources */,
+				DFAB8E5F246CD83800A3A3A8 /* SubmittedQuesiton.swift in Sources */,
+				DF92AE80245BA09B008783BB /* Question.swift in Sources */,
+				DF12BCD624AE2C890002F97E /* GradientView.swift in Sources */,
+				DFADDA162457E3BC00327340 /* SchoolLocationTableViewCell.swift in Sources */,
+				DFF6E7742457B86C00BA6F3C /* UIView.swift in Sources */,
+				DF70699724631DBE004468CE /* URL.swift in Sources */,
+				DF92AE83245C5E95008783BB /* Decodable.swift in Sources */,
+				DF45BF9024644FD9004608C4 /* AddFriendsViewController.swift in Sources */,
+				DF89ECC32457B50100D7FCBA /* BarButtonHelper.swift in Sources */,
+				DF89ECB424573B5600D7FCBA /* JoinSchoolViewController.swift in Sources */,
+				DFB65D32245B270600188618 /* GamePollTableViewCell.swift in Sources */,
+				DFAB8E59246CC3C500A3A3A8 /* GifViewController.swift in Sources */,
+				DFBA0AD3245E2D4F0098023C /* InboxItem.swift in Sources */,
+				DFC686B824562A800089CD1A /* NameViewController.swift in Sources */,
+				DF8D30D42467A86B00C4AB7F /* EmptyView.swift in Sources */,
+				DF92AE84245C5E95008783BB /* Encodable.swift in Sources */,
+				DF710B7724610D39006F2686 /* SettingsTableViewController.swift in Sources */,
+				DF89ECB02457363C00D7FCBA /* GenderViewController.swift in Sources */,
+				DF70699924635227004468CE /* InviteFriendsTableViewCell.swift in Sources */,
+				DF89ECB2245737CB00D7FCBA /* GradeTableViewController.swift in Sources */,
+				DF45BF8924644AA8004608C4 /* FriendsViewController.swift in Sources */,
+				DF45BF9224644FFC004608C4 /* MyFriendsViewController.swift in Sources */,
+				DF752099245CED540018AB9F /* GradeType.swift in Sources */,
+				DF8A15E92468537B0059D825 /* NotificationsHelper.swift in Sources */,
+				DF71DBCF2454F2A3003F268D /* CALayer.swift in Sources */,
+				DFAB8E5D246CCC0400A3A3A8 /* SubmitQuestionViewController.swift in Sources */,
+				DF32B95024580B29009EB035 /* GoogleDataProvider.swift in Sources */,
 				DF30815B2454C1DA005FFC7C /* SceneDelegate.swift in Sources */,
+				DF8F1B7C2464EFD900C43E96 /* Friendship.swift in Sources */,
+				DF89ECC12457AE2500D7FCBA /* CodeViewController.swift in Sources */,
+				DF89ECAD2457103A00D7FCBA /* User.swift in Sources */,
+				DF9A589824637E8300F80B7D /* FirebaserContactResponse.swift in Sources */,
+				DF45BF8B24644C49004608C4 /* CarbonSwipe.swift in Sources */,
+				DF11A110246C826E005A388F /* WebViewController.swift in Sources */,
+				DF0736D4245FA75D00735B87 /* ViewInboxItemViewController.swift in Sources */,
+				DF32B95224580B29009EB035 /* Metadata.swift in Sources */,
+				DF75209B245CF12A0018AB9F /* SchoolLevelType.swift in Sources */,
+				DF3081732454C885005FFC7C /* PlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF30815E2454C1DA005FFC7C /* Main.storyboard */ = {
+		DF30815E2454C1DA005FFC7C /* Inbox.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DF30815F2454C1DA005FFC7C /* Base */,
 			);
-			name = Main.storyboard;
+			name = Inbox.storyboard;
 			sourceTree = "<group>";
 		};
 		DF3081632454C1DF005FFC7C /* LaunchScreen.storyboard */ = {
@@ -216,7 +730,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +784,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,37 +796,47 @@
 		};
 		DF30816A2454C1DF005FFC7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7363AD500E36D685DFE242BB /* Pods-Swish.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Swish/Swish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6P8ZRP65P6;
 				INFOPLIST_FILE = Swish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtemnkengFontem.Swish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DF30816B2454C1DF005FFC7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E953E2D5DB243D1BF98251 /* Pods-Swish.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Swish/Swish.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = 6P8ZRP65P6;
 				INFOPLIST_FILE = Swish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AtemnkengFontem.Swish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

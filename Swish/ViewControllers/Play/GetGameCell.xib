@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GetGameCellModel" customModule="Swish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DGv-Xc-O1x">
+                    <rect key="frame" x="16" y="261.5" width="382" height="177.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghost" translatesAutoresizingMaskIntoConstraints="NO" id="QH7-vQ-IoC">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="wdE-47-Ad8"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're out of questions for now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJn-eF-cfr">
+                            <rect key="frame" x="0.0" y="83" width="382" height="29"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check back in 59m 59s" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjb-3H-eQh">
+                            <rect key="frame" x="0.0" y="120" width="382" height="29"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or invite a friend to unlock now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zg6-Vx-ctX">
+                            <rect key="frame" x="0.0" y="157" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DGv-Xc-O1x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="11S-4d-AaZ"/>
+                <constraint firstItem="DGv-Xc-O1x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F6T-HT-sqI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DGv-Xc-O1x" secondAttribute="trailing" constant="16" id="Gsb-hx-TVh"/>
+                <constraint firstItem="DGv-Xc-O1x" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Moe-Ik-WjY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomLabel" destination="Zg6-Vx-ctX" id="xAw-W6-uLT"/>
+                <outlet property="checkBackLabel" destination="Rjb-3H-eQh" id="06O-CQ-qCQ"/>
+                <outlet property="emojiImageView" destination="QH7-vQ-IoC" id="jai-wx-etC"/>
+                <outlet property="topLabel" destination="KJn-eF-cfr" id="c2Q-Ij-ScF"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ghost" width="641" height="578"/>
+    </resources>
+</document>

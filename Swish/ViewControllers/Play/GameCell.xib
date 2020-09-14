@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GameCell" id="YrG-n3-lce" customClass="GameCardCell" customModule="Swish" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="700"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="700"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSN-cb-dC8" customClass="GradientView" customModule="Swish" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="700"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTq-U0-I81">
+                        <rect key="frame" x="0.0" y="86" width="357" height="422"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="230x0w" translatesAutoresizingMaskIntoConstraints="NO" id="md3-qU-y3q" customClass="AnimatedImageView" customModule="Kingfisher">
+                                <rect key="frame" x="-24.5" y="8" width="406" height="406"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="md3-qU-y3q" secondAttribute="height" multiplier="1:1" id="QHL-yy-ScZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a22-Wx-X5Z" customClass="BasicButton" customModule="Swish" customModuleProvider="target">
+                                <rect key="frame" x="12" y="376" width="28" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6NI-3V-OQg"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="gobackward" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="23" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="YrG-n3-lce" eventType="touchUpInside" id="Fv4-XL-7QH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a22-Wx-X5Z" firstAttribute="leading" secondItem="XTq-U0-I81" secondAttribute="leading" constant="12" id="BoH-cJ-g9d"/>
+                            <constraint firstAttribute="bottom" secondItem="md3-qU-y3q" secondAttribute="bottom" constant="8" id="Dga-f1-fMH"/>
+                            <constraint firstItem="md3-qU-y3q" firstAttribute="centerX" secondItem="XTq-U0-I81" secondAttribute="centerX" id="Err-2R-P9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="a22-Wx-X5Z" secondAttribute="bottom" constant="16" id="ogG-J3-myF"/>
+                            <constraint firstItem="md3-qU-y3q" firstAttribute="top" secondItem="XTq-U0-I81" secondAttribute="top" constant="8" id="zJj-YI-46D"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mirror mirror on the wall, whos the fairest of them all? (it's me ofc u silly hoose&quot; I'm testing the 3 lines in the text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgZ-9q-Waa">
+                        <rect key="frame" x="16" y="16" width="325" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="rWV-mv-YPF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P2x-tr-zy1">
+                        <rect key="frame" x="8" y="508" width="341" height="176"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="176" id="GL3-h4-grF"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="hur-jY-jUf"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oSN-cb-dC8" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" id="1uo-RV-hxU"/>
+                <constraint firstItem="P2x-tr-zy1" firstAttribute="top" secondItem="XTq-U0-I81" secondAttribute="bottom" id="92Z-aW-5eA"/>
+                <constraint firstItem="XTq-U0-I81" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" id="Aii-i8-qlm"/>
+                <constraint firstAttribute="trailing" secondItem="XTq-U0-I81" secondAttribute="trailing" id="IKY-MX-aTp"/>
+                <constraint firstAttribute="bottom" secondItem="P2x-tr-zy1" secondAttribute="bottom" constant="16" id="IvD-wv-PiQ"/>
+                <constraint firstAttribute="trailing" secondItem="CgZ-9q-Waa" secondAttribute="trailing" constant="16" id="IwQ-Q4-zlN"/>
+                <constraint firstItem="CgZ-9q-Waa" firstAttribute="top" secondItem="YrG-n3-lce" secondAttribute="top" constant="16" id="TJl-Hz-8KJ"/>
+                <constraint firstItem="P2x-tr-zy1" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" constant="8" id="Xnq-EE-Vdc"/>
+                <constraint firstAttribute="bottom" secondItem="oSN-cb-dC8" secondAttribute="bottom" id="enx-UJ-8k3"/>
+                <constraint firstItem="oSN-cb-dC8" firstAttribute="centerX" secondItem="YrG-n3-lce" secondAttribute="centerX" id="mkN-KJ-0uS"/>
+                <constraint firstItem="oSN-cb-dC8" firstAttribute="centerY" secondItem="YrG-n3-lce" secondAttribute="centerY" id="oca-3b-cXD"/>
+                <constraint firstAttribute="trailing" secondItem="P2x-tr-zy1" secondAttribute="trailing" constant="8" id="orl-Pn-Q5y"/>
+                <constraint firstItem="XTq-U0-I81" firstAttribute="top" secondItem="CgZ-9q-Waa" secondAttribute="bottom" id="ssS-V7-Yhw"/>
+                <constraint firstItem="CgZ-9q-Waa" firstAttribute="leading" secondItem="YrG-n3-lce" secondAttribute="leading" constant="16" id="vSj-GP-sS9"/>
+                <constraint firstItem="oSN-cb-dC8" firstAttribute="top" secondItem="YrG-n3-lce" secondAttribute="top" id="zQZ-lG-myN"/>
+            </constraints>
+            <size key="customSize" width="357" height="431"/>
+            <connections>
+                <outlet property="gradientView" destination="oSN-cb-dC8" id="p1f-G4-niq"/>
+                <outlet property="imageView" destination="md3-qU-y3q" id="Mrs-v3-Bd9"/>
+                <outlet property="questionLabel" destination="CgZ-9q-Waa" id="CNf-JZ-An4"/>
+                <outlet property="shuffleButton" destination="a22-Wx-X5Z" id="tun-oz-rAF"/>
+                <outlet property="tableView" destination="P2x-tr-zy1" id="MjX-UR-tgW"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="139.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="230x0w" width="230" height="230"/>
+        <image name="gobackward" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

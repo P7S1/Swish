@@ -15,11 +15,87 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>swishApp</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.AtemnkengFontem.Swish</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>swishApp</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.AtemnkengFontem.Swish</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.96614730413-4tfcup23rrlds0aoqnm6kleu1siiu8hp</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.AtemnkengFontem.Swish</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.AtemnkengFontem.Swish</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FirebaseDynamicLinksCustomDomains</key>
+	<array>
+		<string>https://playswish.com/users</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>itms-apps</string>
+		<string>bitmoji-sdk</string>
+		<string>snapchat</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSContactsUsageDescription</key>
+	<string>Your contacts are used so you can quickly find friends to invite to Swish</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To find schools nearby you. Your location data is never stored in our servers</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save cards you've been chosen in into your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Save cards you've been chosen in into your photo library.</string>
+	<key>SCSDKClientId</key>
+	<string>c37b58f3-dc8a-4997-bfa4-92fba9f9330d</string>
+	<key>SCSDKRedirectUrl</key>
+	<string>swishApp://snap-kit/oauth2</string>
+	<key>SCSDKScopes</key>
+	<array>
+		<string>https://auth.snapchat.com/oauth2/api/user.external_id</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.bitmoji.avatar</string>
+		<string>https://auth.snapchat.com/oauth2/api/user.display_name</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Odin Rounded - Regular.otf</string>
+		<string>Odin Rounded - Bold.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -34,15 +110,15 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>LaunchScreen</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -50,8 +126,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

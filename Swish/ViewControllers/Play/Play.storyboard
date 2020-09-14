@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lVf-EL-fQb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play View Controller-->
+        <scene sceneID="RwA-cB-bjR">
+            <objects>
+                <viewController storyboardIdentifier="PlayViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lVf-EL-fQb" customClass="PlayViewController" customModule="Swish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2Q-eh-0Yi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRV-zJ-40o" customClass="VerticalCardSwiper" customModule="VerticalCardSwiper">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sideInset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="visibleNextCardHeight">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSideSwipingEnabled" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-Xz-72G" customClass="BasicButton" customModule="Swish" customModuleProvider="target">
+                                <rect key="frame" x="32" y="796" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kIS-SW-RB2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="inviteAFriendPressed:" destination="lVf-EL-fQb" eventType="touchUpInside" id="pgd-B5-aqS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-Sz-uBE" customClass="BasicButton" customModule="Swish" customModuleProvider="target">
+                                <rect key="frame" x="32" y="730" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p9i-5Y-r72"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="FIND FRIENDS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findFriendsButtonPressed:" destination="lVf-EL-fQb" eventType="touchUpInside" id="WU8-Xx-p4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hRV-zJ-40o" secondAttribute="bottom" id="0AR-uG-tk0"/>
+                            <constraint firstItem="ePR-nI-7nE" firstAttribute="trailing" secondItem="FPb-Sz-uBE" secondAttribute="trailing" constant="32" id="1eO-oI-wew"/>
+                            <constraint firstItem="FPb-Sz-uBE" firstAttribute="leading" secondItem="ePR-nI-7nE" secondAttribute="leading" constant="32" id="OEO-Zx-pSm"/>
+                            <constraint firstItem="QOX-Xz-72G" firstAttribute="leading" secondItem="ePR-nI-7nE" secondAttribute="leading" constant="32" id="ZGB-7M-jf1"/>
+                            <constraint firstItem="hRV-zJ-40o" firstAttribute="top" secondItem="ePR-nI-7nE" secondAttribute="top" id="apQ-cn-yic"/>
+                            <constraint firstItem="hRV-zJ-40o" firstAttribute="trailing" secondItem="ePR-nI-7nE" secondAttribute="trailing" id="gUN-Sg-MoV"/>
+                            <constraint firstItem="QOX-Xz-72G" firstAttribute="top" secondItem="FPb-Sz-uBE" secondAttribute="bottom" constant="16" id="pMe-SW-jOs"/>
+                            <constraint firstItem="ePR-nI-7nE" firstAttribute="bottom" secondItem="QOX-Xz-72G" secondAttribute="bottom" constant="16" id="pcW-X6-hDg"/>
+                            <constraint firstItem="hRV-zJ-40o" firstAttribute="leading" secondItem="ePR-nI-7nE" secondAttribute="leading" id="tQc-pN-JxR"/>
+                            <constraint firstItem="ePR-nI-7nE" firstAttribute="trailing" secondItem="QOX-Xz-72G" secondAttribute="trailing" constant="32" id="tWO-ef-EOY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePR-nI-7nE"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardSwiper" destination="hRV-zJ-40o" id="kdj-5p-eIq"/>
+                        <outlet property="findFriendsButton" destination="FPb-Sz-uBE" id="vPf-RR-5U6"/>
+                        <outlet property="inviteFriendsButton" destination="QOX-Xz-72G" id="vOp-tR-LYe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrY-5x-swY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="44.866071428571423"/>
+        </scene>
+        <!--Invite Friend View Controller-->
+        <scene sceneID="59S-iY-Eme">
+            <objects>
+                <viewController storyboardIdentifier="InviteFriendViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TfN-8z-TUi" customClass="InviteFriendViewController" customModule="Swish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u75-A7-oRG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-rx-4aQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InviteFriendsTableViewCell" id="tVW-1y-ycq" customClass="InviteFriendsTableViewCell" customModule="Swish" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="70.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tVW-1y-ycq" id="L7u-Sv-feK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QGh-xE-TKN">
+                                                    <rect key="frame" x="16" y="13" width="156" height="44.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Atemnkeng Fontem" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L79-bi-0fd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="156" height="23.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Does not use Swish" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWD-XR-liz">
+                                                            <rect key="frame" x="0.0" y="23.5" width="156" height="21"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="JWD-XR-liz" firstAttribute="leading" secondItem="QGh-xE-TKN" secondAttribute="leading" id="HD9-kt-I0N"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JWD-XR-liz" secondAttribute="bottom" id="HLP-us-PUv"/>
+                                                        <constraint firstItem="L79-bi-0fd" firstAttribute="leading" secondItem="QGh-xE-TKN" secondAttribute="leading" id="RQl-Ie-8hH"/>
+                                                        <constraint firstItem="L79-bi-0fd" firstAttribute="top" secondItem="QGh-xE-TKN" secondAttribute="top" id="bEg-Dc-640"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1H-8A-b9W" customClass="BasicButton" customModule="Swish" customModuleProvider="target">
+                                                    <rect key="frame" x="316" y="18" width="82" height="35"/>
+                                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="pCd-Xh-ZiW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                    <state key="normal" title="INVITE">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="inviteButtonPressed:" destination="tVW-1y-ycq" eventType="touchUpInside" id="m5V-wY-0mH"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="W1H-8A-b9W" secondAttribute="trailing" constant="16" id="9Il-92-FnP"/>
+                                                <constraint firstItem="QGh-xE-TKN" firstAttribute="top" secondItem="L7u-Sv-feK" secondAttribute="top" constant="13" id="NE2-qb-oMT"/>
+                                                <constraint firstAttribute="bottom" secondItem="QGh-xE-TKN" secondAttribute="bottom" constant="13" id="XgQ-fe-eEB"/>
+                                                <constraint firstItem="W1H-8A-b9W" firstAttribute="centerY" secondItem="L7u-Sv-feK" secondAttribute="centerY" id="dVa-jR-jvJ"/>
+                                                <constraint firstItem="QGh-xE-TKN" firstAttribute="leading" secondItem="L7u-Sv-feK" secondAttribute="leading" constant="16" id="nbW-PK-p1x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="inviteButton" destination="W1H-8A-b9W" id="kWH-7i-dgs"/>
+                                            <outlet property="nameLabel" destination="L79-bi-0fd" id="nnU-9E-y4U"/>
+                                            <outlet property="usesSwishLabel" destination="JWD-XR-liz" id="8lV-rz-zXS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oSB-rx-4aQ" secondAttribute="bottom" id="9jM-36-Rji"/>
+                            <constraint firstItem="SbM-jD-p0Z" firstAttribute="trailing" secondItem="oSB-rx-4aQ" secondAttribute="trailing" id="TN9-Av-UpD"/>
+                            <constraint firstItem="oSB-rx-4aQ" firstAttribute="top" secondItem="u75-A7-oRG" secondAttribute="top" id="aai-Qf-3Ff"/>
+                            <constraint firstItem="oSB-rx-4aQ" firstAttribute="leading" secondItem="SbM-jD-p0Z" secondAttribute="leading" id="uyV-Kr-183"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SbM-jD-p0Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="oSB-rx-4aQ" id="DtK-QQ-BFD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYb-ve-duV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.39130434782612" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+</document>
