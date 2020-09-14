@@ -35,7 +35,7 @@ typealias PhotoCompletion = (UIImage?) -> Void
 class GoogleDataProvider {
   private var photosDictionary: [String: UIImage] = [:]
   private var placesTask: URLSessionDataTask?
-  private let googleApiKey = "AIzaSyCV8Qr2c9DsZoJaJ8sld2aZGx3rNXk3lgg"
+  private let googleApiKey = ""
 
   static let shared : GoogleDataProvider = GoogleDataProvider()
     
